@@ -1,0 +1,38 @@
+footer {
+	width: 100%;
+	height: 120px;
+	background: $footer-color-bg;
+	text-align: center;
+	color: $white-color;
+	padding-top: 50px;
+
+	@include smallScreenMediaQuery {
+		text-align:center;
+	}
+}
+.social-media {
+	margin: 0 auto;
+	width: 165px;
+	a {
+		display: block;
+		width: 36px;
+		height: 36px;
+		text-indent: -9999px;
+	}
+	div {
+		float: left;
+		margin-right: 5px;
+		&.one {
+            @include backImage($footer-social-media-img, 0);
+		}
+		&.two {
+            @include backImage($footer-social-media-img, -38px);
+		}
+		&.three {
+            @include backImage($footer-social-media-img, -76px);
+		}
+		&.four {
+            @include backImage($footer-social-media-img, -114px);
+		}
+	}
+}
